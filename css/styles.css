@@ -2,7 +2,6 @@
     box-sizing: border-box;
 }
 
-
 body {
     margin: 0;
     background: #ffffff;
@@ -67,3 +66,8 @@ body {
     max-height: 250px; /* Added max-height */
     object-fit: contain;
 }
+
+/* #title_card:hover {
+    background-color: #000000;
+    color: #ffffff;
+} */
