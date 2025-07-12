@@ -1,3 +1,17 @@
+html {
+  scroll-behavior: smooth;
+}
+
+html, body {
+  overscroll-behavior: none;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none;  /* IE and Edge */
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
 * {
     box-sizing: border-box;
 }
