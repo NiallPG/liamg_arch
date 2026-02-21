@@ -11,9 +11,19 @@
   <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:wght@300;400;500;600;700;800&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="gallery">
+    <div class="mobile-header">
+        <a href="index.html" class="mobile-logo"><img src="./images/house_logo.png">LIAM GAVIN</a>
+        <button class="hamburger" id="hamburger" aria-label="Menu">
+            <span></span><span></span><span></span>
+        </button>
+    </div>
+    <nav class="mobile-nav" id="mobile-nav">
+        <a href="portfolio.html">Portfolio</a>
+        <a href="resume.html">Resume</a>
+        <a href="contact.html">Contact</a>
+    </nav>
 
-        <!-- SIDEBAR -->
+    <div class="gallery">
         <div id="box">
             <p id="title_card"><a href="index.html"><img src="./images/house_logo.png">LIAM GAVIN</a></p>
             <p class="formatted_text" id="top_text"><a href="portfolio.html">Portfolio</a></p>
@@ -21,13 +31,11 @@
             <p class="formatted_text"><a href="contact.html">Contact</a></p>
         </div>
 
-        <!-- MAIN CONTENT -->
         <div class="resume-content">
             <iframe src="./Liam_Gavin Resume (2).pdf"></iframe>
             <a href="./Liam_Gavin Resume (2).pdf" download class="download-link">Download PDF</a>
         </div>
-        
-
     </div>
+    <script src="./js/main.js"></script>
 </body>
 </html>
