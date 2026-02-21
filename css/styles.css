@@ -152,3 +152,35 @@ a:visited {
 .download-link:hover {
     color: #E5383B;
 }
+
+/* Contact page */
+.contact-content {
+    grid-column: 1 / -1;
+    display: flex;
+    justify-content: center;
+}
+
+.profile-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+}
+
+.profile-card .headshot {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.profile-info p {
+    font-size: 15px;
+    color: #555;
+    margin: 8px 0;
+    text-align: center;
+}
+
+.profile-info a:hover {
+    color: #E5383B;
+}
