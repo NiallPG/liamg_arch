@@ -317,12 +317,15 @@ a:visited {
         display: flex;
         align-items: center;
         gap: 6px;
+        line-height: 1;
     }
 
     .mobile-logo img {
-        width: 28px;
-        height: 28px;
+        width: 28px !important;
+        height: 28px !important;
         object-fit: contain;
+        position: relative;
+        top: -3px;
     }
 
     /* Hamburger button */
@@ -333,8 +336,11 @@ a:visited {
         padding: 4px;
         display: flex;
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
         gap: 5px;
         z-index: 51;
+        height: 28px;
     }
 
     .hamburger span {
