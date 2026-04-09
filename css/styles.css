@@ -111,6 +111,22 @@ a:visited {
     margin-right: 4px;
 }
 
+/* Hero image on home page */
+.hero-content {
+    grid-column: 1 / -1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.hero-image {
+    width: 100%;
+    max-width: 100%;
+    height: auto !important;
+    max-height: 80vh;
+    object-fit: contain !important;
+}
+
 /* Portfolio page: iframe spans the full 3-column content area */
 .portfolio-content {
     grid-column: 1 / -1;
