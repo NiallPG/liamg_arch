@@ -30,8 +30,12 @@ document.addEventListener("DOMContentLoaded", () => {
   const nextBtn = document.getElementById("lightbox-next");
 
   const galleryImages = Array.from(
-    document.querySelectorAll(".gallery > img")
+    document.querySelectorAll(".gallery > img, .gallery > picture > img")
   );
+
+  function galleryImageUrl(img) {
+    return img.currentSrc || img.src;
+  }
 
   const descriptions = galleryImages.map(
     (_, i) => `Project ${i + 1} — Description coming soon.`
@@ -41,7 +45,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   function openLightbox(index) {
     currentIndex = index;
-    lightboxImg.src = galleryImages[index].src;
+    lightboxImg.src = galleryImageUrl(galleryImages[index]);
     lightboxDesc.textContent = descriptions[index];
     overlay.classList.add("active");
     document.body.style.overflow = "hidden";
@@ -55,7 +59,7 @@ document.addEventListener("DOMContentLoaded", () => {
   function navigate(direction) {
     currentIndex =
       (currentIndex + direction + galleryImages.length) % galleryImages.length;
-    lightboxImg.src = galleryImages[currentIndex].src;
+    lightboxImg.src = galleryImageUrl(galleryImages[currentIndex]);
     lightboxDesc.textContent = descriptions[currentIndex];
   }
 

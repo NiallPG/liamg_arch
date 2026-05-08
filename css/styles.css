@@ -46,6 +46,11 @@ body {
     z-index: 1;
 }
 
+.gallery > picture {
+    display: block;
+    width: 100%;
+}
+
 .gallery img {
     width: 100%;
     max-width: 100%;
@@ -390,7 +395,7 @@ a:visited {
     }
 
     .mobile-nav.open {
-        max-height: 200px;
+        max-height: 300px;
     }
 
     .mobile-nav a {
